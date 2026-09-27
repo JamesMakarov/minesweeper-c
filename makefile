@@ -13,17 +13,15 @@ SRC_FILES = $(BACK_DIR)/campominado.c $(INTERFACE_DIR)/interface.c $(SRC_DIR)/ma
 OUTPUT = campominado
 
 # Flags de compilação
-CFLAGS = -I $(BACK_DIR) -I $(INTERFACE_DIR)
+CFLAGS = -Wall -Wextra -std=c11 -I $(BACK_DIR) -I $(INTERFACE_DIR)
 
 # Regra principal (compila e executa)
 all: clean $(OUTPUT)
 
 # Regra para compilar
 $(OUTPUT): $(SRC_FILES)
-	@clear
 	@echo "Compilando o projeto..."
-	@$(CC) -o $(OUTPUT) $(SRC_FILES) $(CFLAGS) >/dev/null 2>&1
-	@if [ $$? -ne 0 ]; then echo "Erro na compilação!"; exit 1; fi
+	$(CC) -o $(OUTPUT) $(SRC_FILES) $(CFLAGS)
 	@echo "Compilação concluída com sucesso!"
 
 # Regra para limpar arquivos gerados
