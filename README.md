@@ -1,5 +1,7 @@
 # Minesweeper in C
 
+[![C build](https://github.com/JamesMakarov/minesweeper-c/actions/workflows/ci.yml/badge.svg)](https://github.com/JamesMakarov/minesweeper-c/actions/workflows/ci.yml)
+
 Implementação de **Campo Minado em C**, desenvolvida como projeto acadêmico com separação entre a lógica do jogo e a camada de interface.
 
 ## Funcionalidades
