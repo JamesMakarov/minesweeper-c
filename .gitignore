@@ -1,0 +1,13 @@
+# Build artifacts
+campominado
+*.exe
+*.o
+*.out
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
